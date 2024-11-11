@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+            // დაწერეთ ფუნქცია, რომელიც დააგენერირებს 40 შემთხვევითი
+            // სიმბოლოსაგან შემდგარ სიტყვას.
+
+            function  something(){
+                var word ='';
+                for(let i=0;i<40;i++){
+                    var k = Math.floor(Math.random()* (1000-100)+100);
+                    word += String.fromCharCode(k)
+                }
+                console.log(word)
+            }
+
+            something();
+    </script>
+</body>
+</html>
